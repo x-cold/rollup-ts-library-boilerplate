@@ -10,9 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "gitlab@git.garena.com:pengfei.yang/mylib.git"
+    "url": "git@github.com:x-cold/rollup-ts-library-boilerplate.git"
   },
   "scripts": {
+    "postinstall": "husky install",
     "lint": "eslint --ext .js,.ts src/",
     "lint:fix": "eslint --ext .js,.ts --fix src/",
     "start": "rollup -c rollup.config.ts -w",
@@ -37,7 +38,7 @@
   "keywords": [
     "normalize"
   ],
-  "author": "pengfei.yang <pengfei.yang@shopee.com>",
+  "author": "x-cold <lxstart@outlook.com>",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
