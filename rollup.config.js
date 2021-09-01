@@ -4,6 +4,7 @@ import sourceMaps from 'rollup-plugin-sourcemaps'
 import typescript from 'rollup-plugin-typescript2'
 import json from 'rollup-plugin-json'
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const pkg = require('./package.json')
 
 const libraryName = 'mylib'

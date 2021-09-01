@@ -2712,9 +2712,10 @@ img {
 <div class="container container-main">
 	<div class="content-wrap">
 		<div class="tsd-panel tsd-typography">
-			<p>Rollup Ts Library Boilerplate</p>
+			<a href="#rollup-ts-library-boilerplate" id="rollup-ts-library-boilerplate" style="color: inherit; text-decoration: none;">
+				<h2>Rollup Ts Library Boilerplate</h2>
+			</a>
 			<p>A starter project that makes creating a TypeScript library extremely easy.</p>
-			<p>Usage</p>
 			<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 				<h3>Usage</h3>
 			</a>
@@ -2749,40 +2750,27 @@ img {
 				<h3>NPM scripts</h3>
 			</a>
 			<ul>
-				<li><code>npm t</code>: Run test suite</li>
-				<li><code>npm start</code>: Run <code>npm run build</code> in watch mode</li>
+				<li><code>npm lint</code>: Eslint code</li>
+				<li><code>npm lint:fix</code>: Eslint code and try to fix problems</li>
+				<li><code>npm start</code>: Realtime complie code</li>
+				<li><code>npm run docs</code>: Generate type documents</li>
+				<li><code>npm run build</code>: Build ths dist products</li>
+				<li><code>npm run release</code>: The same as <code>npm run release:patch</code></li>
+				<li><code>npm run release:patch</code>: Automatically upgrade patch versioin and update CHANGELOG.md</li>
+				<li><code>npm run release:minor</code>: Automatically upgrade minor versioin and update CHANGELOG.md</li>
+				<li><code>npm run release:major</code>: Automatically upgrade major versioin and update CHANGELOG.md</li>
+				<li><code>npm run test</code>: Run test suite via jest with code coverage</li>
 				<li><code>npm run test:watch</code>: Run test suite in <a href="http://facebook.github.io/jest/docs/cli.html#watch">interactive watch mode</a></li>
 				<li><code>npm run test:prod</code>: Run linting and generate coverage</li>
-				<li><code>npm run build</code>: Generate bundles and typings, create docs</li>
-				<li><code>npm run lint</code>: Lints code</li>
-				<li><code>npm run commit</code>: Commit using conventional commit style (<a href="https://github.com/typicode/husky">husky</a> will tell you to use it if you haven&#39;t :wink:)</li>
 			</ul>
-			<a href="#automatic-releases" id="automatic-releases" style="color: inherit; text-decoration: none;">
-				<h3>Automatic releases</h3>
-			</a>
-			<p><em><strong>Prerequisites</strong>: you need to create/login accounts and add your project to:</em></p>
-			<ul>
-				<li><a href="https://www.npmjs.com/">npm</a></li>
-				<li><a href="https://travis-ci.org">Travis CI</a></li>
-				<li><a href="https://coveralls.io">Coveralls</a></li>
-			</ul>
-			<p><em><strong>Prerequisite for Windows</strong>: Semantic-release uses
-					<strong><a href="https://github.com/nodejs/node-gyp">node-gyp</a></strong> so you will need to
-					install
-					<a href="https://github.com/felixrieseberg/windows-build-tools">Microsoft&#39;s windows-build-tools</a>
-			using this command:</em></p>
-			<pre><code class="language-bash"><span style="color: #000000">npm install --global --production windows-build-tools</span>
-</code></pre>
 			<a href="#git-hooks" id="git-hooks" style="color: inherit; text-decoration: none;">
 				<h3>Git Hooks</h3>
 			</a>
-			<p>There is already set a <code>precommit</code> hook for formatting your code with Prettier :nail_care:</p>
-			<p>By default, there are two disabled git hooks. They&#39;re set up when you run the <code>npm run semantic-release-prepare</code> script. They make sure:</p>
+			<p>There is already set a <code>precommit</code> hook for formatting your code with Eslint :nail_care:</p>
+			<p>By default, there are two disabled git hooks. They&#39;re set up when you run the <code>npm run release</code> script. They make sure:</p>
 			<ul>
 				<li>You follow a <a href="https://github.com/conventional-changelog/conventional-changelog">conventional commit message</a></li>
-				<li>Your build is not going to fail in <a href="https://travis-ci.org">Travis</a> (or your CI server), since it&#39;s runned locally before <code>git push</code></li>
 			</ul>
-			<p>This makes more sense in combination with <a href="#automatic-releases">automatic releases</a></p>
 		</div>
 		<div style="position:relative;"><a name="typedoc-main-index" class="tsd-anchor"></a></div>
 		<section class="tsd-panel-group tsd-index-group">

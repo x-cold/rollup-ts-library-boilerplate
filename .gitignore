@@ -60,6 +60,9 @@ typings/
 # db
 db/*.sqlite
 
+# mac dot file
+.DS_store
+
 !.keep
 
 dist/
