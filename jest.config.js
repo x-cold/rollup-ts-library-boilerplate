@@ -4,5 +4,6 @@ module.exports = {
   testEnvironment: 'node',
   moduleFileExtensions: ['ts', 'js'],
   transform: { '^.+\\.ts?$': 'ts-jest' },
+  testPathIgnorePatterns: ['dist/'],
   globals: { 'ts-jest': { diagnostics: false }},
 };
