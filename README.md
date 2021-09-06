@@ -54,8 +54,7 @@ import something from 'mylib/dist/lib/something'
  - `npm run test:prod`: Run linting and generate coverage
 
 ### Git Hooks
+There is already set a `precommit` hook for formatting your code with Eslint and Commitlint :nail_care:
 
-There is already set a `precommit` hook for formatting your code with Eslint :nail_care:
-
-By default, there are two disabled git hooks. They're set up when you run the `npm run release` script. They make sure:
+By default, there are two disabled git hooks. They're set up when you run the `npm i` script. They make sure:
  - You follow a [conventional commit message](https://github.com/conventional-changelog/conventional-changelog)
