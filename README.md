@@ -6,7 +6,7 @@ A starter project that makes creating a TypeScript library extremely easy.
 ### Usage
 
 ```bash
-git clone gitlab@git.garena.com:pengfei.yang/rollup-ts-library-boilerplate YOURFOLDERNAME
+git clone git@github.com:x-cold/rollup-ts-library-boilerplate.git YOURFOLDERNAME
 cd YOURFOLDERNAME
 
 # Run npm install and write your library name when asked. That's all!
