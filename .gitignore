@@ -66,3 +66,4 @@ db/*.sqlite
 !.keep
 
 dist/
+package-lock.json
