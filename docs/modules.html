@@ -2719,7 +2719,10 @@ img {
 			<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 				<h3>Usage</h3>
 			</a>
-			<pre><code class="language-bash"><span style="color: #000000">git clone gitlab@git.garena.com:pengfei.yang/rollup-ts-library-boilerplate YOURFOLDERNAME</span>
+			<blockquote>
+				<p>The version of your node.js should be greater than v12</p>
+			</blockquote>
+			<pre><code class="language-bash"><span style="color: #000000">git clone git@github.com:x-cold/rollup-ts-library-boilerplate.git YOURFOLDERNAME</span>
 <span style="color: #795E26">cd</span><span style="color: #000000"> YOURFOLDERNAME</span>
 
 <span style="color: #008000"># Run npm install and write your library name when asked. That&#039;s all!</span>
@@ -2766,8 +2769,8 @@ img {
 			<a href="#git-hooks" id="git-hooks" style="color: inherit; text-decoration: none;">
 				<h3>Git Hooks</h3>
 			</a>
-			<p>There is already set a <code>precommit</code> hook for formatting your code with Eslint :nail_care:</p>
-			<p>By default, there are two disabled git hooks. They&#39;re set up when you run the <code>npm run release</code> script. They make sure:</p>
+			<p>There is already set a <code>precommit</code> hook for formatting your code with Eslint and Commitlint :nail_care:</p>
+			<p>By default, there are two disabled git hooks. They&#39;re set up when you run the <code>npm i</code> script. They make sure:</p>
 			<ul>
 				<li>You follow a <a href="https://github.com/conventional-changelog/conventional-changelog">conventional commit message</a></li>
 			</ul>

@@ -13,7 +13,7 @@
     "url": "git@github.com:x-cold/rollup-ts-library-boilerplate.git"
   },
   "scripts": {
-    "prepare": "rm -rf .husky/_ && husky install",
+    "postinstall": "rm -rf .husky/_ && husky install",
     "lint": "eslint --ext .js,.ts src/",
     "lint:fix": "eslint --ext .js,.ts --fix src/",
     "start": "rollup -c rollup.config.ts -w",
@@ -42,8 +42,10 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "@babel/preset-env": "^7.16.0",
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
+    "@rollup/plugin-babel": "^5.3.0",
     "@types/jest": "^27.0.1",
     "@typescript-eslint/eslint-plugin": "^4.29.3",
     "eslint": "^7.32.0",
