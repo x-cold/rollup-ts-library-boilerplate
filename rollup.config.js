@@ -1,13 +1,13 @@
-import resolve from 'rollup-plugin-node-resolve'
-import commonjs from 'rollup-plugin-commonjs'
-import sourceMaps from 'rollup-plugin-sourcemaps'
-import typescript from 'rollup-plugin-typescript2'
-import json from 'rollup-plugin-json'
+import resolve from 'rollup-plugin-node-resolve';
+import commonjs from 'rollup-plugin-commonjs';
+import sourceMaps from 'rollup-plugin-sourcemaps';
+import typescript from 'rollup-plugin-typescript2';
+import json from 'rollup-plugin-json';
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const pkg = require('./package.json')
+const pkg = require('./package.json');
 
-const libraryName = 'mylib'
+const libraryName = 'mylib';
 
 export default {
   input: `src/${libraryName}.ts`,
@@ -35,4 +35,4 @@ export default {
     // Resolve source maps to the original source
     sourceMaps(),
   ],
-}
+};
