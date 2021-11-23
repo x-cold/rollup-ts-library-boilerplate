@@ -16,7 +16,7 @@
     "postinstall": "rm -rf .husky/_ && husky install",
     "lint": "eslint --ext .js,.ts src/",
     "lint:fix": "eslint --ext .js,.ts --fix src/",
-    "start": "rollup -c rollup.config.ts -w",
+    "start": "rollup -c rollup.config.js -w",
     "docs": "typedoc --out docs --theme minimal src",
     "prebuild": "rimraf dist",
     "build": "tsc --module commonjs && rollup -c rollup.config.js",
