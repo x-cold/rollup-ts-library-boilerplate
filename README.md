@@ -8,11 +8,11 @@ Rollup Ts Library Boilerplate
 
 [npm-image]: https://img.shields.io/npm/v/rollup-ts-library-boilerplate.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/rollup-ts-library-boilerplate
-[gitflow-image]: https://github.com/x-cold/rollup-ts-library-boilerplate/actions/workflows/nodejs.yml/badge.svg?branch=master
+[gitflow-image]: https://github.com/x-cold/rollup-ts-library-boilerplate/actions/workflows/nodejs.yml/badge.svg?branch=main
 [gitflow-url]: https://github.com/x-cold/rollup-ts-library-boilerplate/actions/workflows/nodejs.yml
-[codecov-image]: https://codecov.io/gh/x-cold/rollup-ts-library-boilerplate/branch/master/graph/badge.svg
+[codecov-image]: https://codecov.io/gh/x-cold/rollup-ts-library-boilerplate/branch/main/graph/badge.svg
 [codecov-url]: https://codecov.io/gh/x-cold/rollup-ts-library-boilerplate
-[download-image]: https://badgen.net/npm/dt/rollup-ts-library-boilerplate
+[download-image]: https://badgen.net/npmnpm/dt/rollup-ts-library-boilerplate
 [download-url]: https://npmjs.org/package/rollup-ts-library-boilerplate
 
 A starter project that makes creating a TypeScript library extremely easy.
