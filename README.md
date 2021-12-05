@@ -25,6 +25,7 @@ npm install
  - **Docs automatic generation and deployment** to `gh-pages`, using **[TypeDoc](http://typedoc.org/)**
  - Automatic types `(*.d.ts)` file generation
  - (Optional) **Automatic releases and changelog**, using [standard-version](https://github.com/conventional-changelog/standard-version#readme), [Commitizen](https://github.com/commitizen/cz-cli), [Conventional changelog](https://github.com/conventional-changelog/conventional-changelog) and [Husky](https://github.com/typicode/husky) (for the git hooks)
+ - Deploy your docs to github pages via gh-pages branch
 
 ### Importing library
 
@@ -52,10 +53,12 @@ import something from 'mylib/dist/lib/something'
  - `npm run release:minor`: Automatically upgrade minor versioin and update CHANGELOG.md
  - `npm run release:major`: Automatically upgrade major versioin and update CHANGELOG.md
  - `npm run test`: Run test suite via jest with code coverage
-  - `npm run test:watch`: Run test suite in [interactive watch mode](http://facebook.github.io/jest/docs/cli.html#watch)
+ - `npm run test:watch`: Run test suite in [interactive watch mode](http://facebook.github.io/jest/docs/cli.html#watch)
  - `npm run test:prod`: Run linting and generate coverage
+ - `npm run deploy`: Clean docs directory and rebuild docs pages
 
 ### Git Hooks
+
 There is already set a `precommit` hook for formatting your code with Eslint and Commitlint :nail_care:
 
 By default, there are two disabled git hooks. They're set up when you run the `npm i` script. They make sure:
