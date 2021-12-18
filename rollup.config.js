@@ -27,6 +27,9 @@ export default {
       tsconfigOverride: {
         include: [
           'src/'
+        ],
+        exclude: [
+          'test/'
         ]
       },
       useTsconfigDeclarationDir: true
