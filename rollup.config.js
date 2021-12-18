@@ -1,14 +1,13 @@
+import path from 'path';
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import sourceMaps from 'rollup-plugin-sourcemaps';
 import typescript from 'rollup-plugin-typescript2';
 import json from 'rollup-plugin-json';
 import { babel } from '@rollup/plugin-babel';
+import pkg from './package.json';
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const pkg = require('./package.json');
-
-const libraryName = 'mylib';
+const libraryName = 'index';
 
 export default {
   input: `src/${libraryName}.ts`,
@@ -25,7 +24,14 @@ export default {
     // Allow json resolution
     json(),
     // Compile TypeScript files
-    typescript({ useTsconfigDeclarationDir: true }),
+    typescript({
+      tsconfigOverride: {
+        exclude: [
+          'test/'
+        ]
+      },
+      useTsconfigDeclarationDir: true
+    }),
     // Allow bundling cjs modules (unlike webpack, rollup doesn't understand cjs)
     commonjs(),
     babel({ babelHelpers: 'bundled' }),

@@ -29,8 +29,6 @@ cd YOURFOLDERNAME
 npm install
 ```
 
-**Start coding!** There are some string equals `mylib`, you can manually modify to what you want.
-
 ### Features
 
  - Zero-setup. After running `npm install` things will setup for you :wink:

@@ -1,10 +1,10 @@
 {
   "name": "rollup-ts-library-boilerplate",
-  "version": "0.0.2",
-  "description": "A library for xxx writing by ts",
-  "main": "dist/mylib.umd.js",
-  "module": "dist/mylib.es5.js",
-  "typings": "dist/types/mylib.d.ts",
+  "version": "1.0.0",
+  "description": "A library template writing by ts",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es5.js",
+  "typings": "dist/types/index.d.ts",
   "directories": {
     "test": "test"
   },
@@ -19,7 +19,7 @@
     "start": "rollup -c rollup.config.js -w",
     "docs": "typedoc --out docs --theme minimal src",
     "prebuild": "rimraf dist",
-    "build": "tsc --module commonjs && rollup -c rollup.config.js",
+    "build": "rollup -c rollup.config.js",
     "release": "npm run release:patch",
     "release:patch": "npm run build && standard-version",
     "release:minor": "npm run build && standard-version --release-as minor",
