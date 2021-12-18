@@ -26,8 +26,8 @@ export default {
     // Compile TypeScript files
     typescript({
       tsconfigOverride: {
-        exclude: [
-          'test/'
+        include: [
+          'src/'
         ]
       },
       useTsconfigDeclarationDir: true
