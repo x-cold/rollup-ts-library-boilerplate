@@ -1,6 +1,6 @@
 {
   "name": "rollup-ts-library-boilerplate",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A library template writing by ts",
   "main": "dist/index.umd.js",
   "module": "dist/index.es5.js",
