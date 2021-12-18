@@ -1,6 +1,6 @@
 {
   "name": "rollup-ts-library-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library template writing by ts",
   "main": "dist/index.umd.js",
   "module": "dist/index.es5.js",
@@ -21,7 +21,7 @@
     "prebuild": "rimraf dist",
     "build": "rollup -c rollup.config.js",
     "release": "npm run release:patch",
-    "release:patch": "npm run build && standard-version",
+    "release:patch": "npm run build && standard-version --release-as patch",
     "release:minor": "npm run build && standard-version --release-as minor",
     "release:major": "npm run build && standard-version --release-as major",
     "test": "jest --coverage",
