@@ -1,4 +1,5 @@
-import mylib from '../src/mylib';
+import mylib from '../src';
+import { getTime } from '../src/utils';
 
 /**
  * Dummy test
@@ -10,5 +11,9 @@ describe('Dummy test', () => {
 
   it('mylib is instantiable', () => {
     expect(mylib).toBeInstanceOf(Object);
+  });
+
+  it('mylib is instantiable', () => {
+    expect(typeof getTime()).toEqual('number');
   });
 });
